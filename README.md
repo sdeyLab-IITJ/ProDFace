@@ -31,4 +31,4 @@ Provide Multiple Sequence Alignment (MSA) for the protein component to calculate
 (b) Providing user-defined MSA in FASTA format  
 
 #  
-If you have any problem or suggestion, please contact: emmanuel.levy@weizmann.ac.il OR sucharita.dey@weizmann.ac.il
+If you have any problem or suggestion, please contact: 'contact.arumay @ gmail.com' OR 'sdey @ iitj.ac.in'
