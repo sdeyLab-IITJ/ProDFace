@@ -1,0 +1,4 @@
+   To run different ProDFace components that calculate important parameters, following softwares are required-
+      i) JDK (Java Development Kit)
+     ii) C compiler
+    iii) Perl Compiler (Interpreter)
