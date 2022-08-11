@@ -8,6 +8,11 @@
 
 #### 2. SYSTEM REQUIREMENT  
 The web version of ProDFace has been tested in Chrome, Firefox and Edge. However, Java plug-ins should be pre-installed to display Java applets properly. The stand alone version of the program will be released in the next update of ProDFace.
+
+To run different ProDFace components Locally that calculate important parameters, following softwares are required-  
+  i) JDK (Java Development Kit)  
+ ii) C compiler  
+iii) Perl Compiler (Interpreter)
 #  
 
 #### 3. EXTERNAL PROGRAMS
@@ -29,6 +34,44 @@ Provide Multiple Sequence Alignment (MSA) for the protein component to calculate
 (a) Using HSSP database  
            OR   
 (b) Providing user-defined MSA in FASTA format  
+
+#  
+#### 5. IMPORTANT ProDFace components  
+#### C programs  
+i) InterfaceConsvSeqIdenArea.c  
+Calculates conservation score (area normalized shannon entropy) of interface residues  
+ii) SubunitAvgEntropy_c1.c  
+Calculates 'average conservation score' of a protein subunit  
+iii) SecStrClass.c  
+Calculates percentage of SSE components (helix, strand, Non-regular) of a protein subunit  
+iv) PPSegment.c  
+Calculates 'number of interface segments' of a subunit and length of each segment  
+v) SSSegment.c  
+Determines SSE of each interface segment  
+
+#### Java programs  
+i) intDist.java  
+Calculates distances between all possible interface atom pairs  
+ii) polar.java  
+Finds the polar and apolar fraction of an interface  
+iii) buried.java  
+Finds fraction of total buried, polar buried, and non-polar buried atoms in an interface  
+iv) seqres.java  
+Finds DSSP assigned secondary structure of each interface residue  
+v) propensity.java  
+Calculates "Residue Propensity Score" of an interface  
+vi) localDensity.java  
+Calculates 'Local Density' of the interface  
+
+#### Perl programs  
+i) int_water.pl  
+Calculates Number of interface Waters  
+ii) Whbs_one_sided.pl  
+Calculates total No. of water mediated hydrogen bonds formed by an interface  
+iii) BW_distribution.pl  
+Calculates total number of Bridging-water and a distribution of total water mediated Hbonds  
+iv) int_HB_donor_atm_asa.pl  
+Caclculates accesibility of Hbond donor groups at the interface  
 
 #  
 If you have any problem or suggestion, please contact: 'contact.arumay @ gmail.com' OR 'sdey @ iitj.ac.in'
